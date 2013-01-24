@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
 
     <title><%= @app['name'] %></title>
-    <link rel="stylesheet" href="stylesheets/screen.css" media="Screen" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/bootstrap-responsive.min.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
 
-    <!-- These are Open Graph tags.  They add meta data to your  -->
-    <!-- site that facebook uses when your content is shared     -->
-    <!-- over facebook.  You should fill these tags in with      -->
-    <!-- your data.  To learn more about Open Graph, visit       -->
-    <!-- 'https://developers.facebook.com/docs/opengraph/'       -->
+    <!-- Open Graph tags -->
     <meta property="og:title" content="<%= @app['name'] %>" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="<%= url %>" />
@@ -20,10 +18,36 @@
     <meta property="og:description" content="My First App" />
     <meta property="fb:app_id" content="<%= @app['name'] %>" />
 
-    <script type="text/javascript" src="/javascripts/jquery-1.7.1.min.js"></script>
-
+    <script type="text/javascript" src="/javascripts/libs/jquery-1.8.3.min.js"></script>
   </head>
   <body>
+    <div class="hero-unit">
+      <h1>Hello, world!</h1>
+    </div>
+
+    <div class="tabbable"> <!-- Only required for left/right tabs -->
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+        <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="tab1">
+          <p>I'm in Section 1.</p>
+        </div>
+        <div class="tab-pane" id="tab2">
+          <p>Howdy, I'm in Section 2.</p>
+        </div>
+      </div>
+    </div>
+
     <div id="fb-root"></div>
+
+    <script type="text/javascript" src="/javascripts/libs/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/javascripts/libs/lodash.min.js"></script>
+    <script type="text/javascript" src="/javascripts/libs/backbone-min.js"></script>
+    <script type="text/javascript" src="/javascripts/libs/moment.min.js"></script>
+
+    <script type="text/javascript" src="/javascripts/init.js"></script>
+    <script type="text/javascript" src="/javascripts/main.js"></script>
   </body>
 </html>
