@@ -1,0 +1,18 @@
+.topic {
+  margin: 3px; }
+
+.thumbnail-image {
+  width: 130px;
+  height: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.thumbnail {
+  cursor: pointer; }
+  .thumbnail .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis; }
